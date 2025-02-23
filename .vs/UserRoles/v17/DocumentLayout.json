@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|c:\\users\\babashov\\source\\repos\\userroles\\userroles\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|solutionrelative:userroles\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|c:\\users\\babashov\\source\\repos\\userroles\\userroles\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|solutionrelative:userroles\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|c:\\users\\babashov\\source\\repos\\userroles\\userroles\\views\\home\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|solutionrelative:userroles\\views\\home\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|c:\\users\\babashov\\source\\repos\\userroles\\userroles\\views\\home\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|solutionrelative:userroles\\views\\home\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|c:\\users\\babashov\\source\\repos\\userroles\\userroles\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|solutionrelative:userroles\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|c:\\users\\babashov\\source\\repos\\userroles\\userroles\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|solutionrelative:userroles\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|c:\\users\\babashov\\source\\repos\\userroles\\userroles\\views\\account\\verifyemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|solutionrelative:userroles\\views\\account\\verifyemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|c:\\users\\babashov\\source\\repos\\userroles\\userroles\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|solutionrelative:userroles\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|c:\\users\\babashov\\source\\repos\\userroles\\userroles\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{468E5BC1-0B9E-4CD6-A812-6575CCB9E944}|UserRoles\\UserRoles.csproj|solutionrelative:userroles\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "UserRoles\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "UserRoles\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBkAAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-22T18:09:04.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "UserRoles\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "UserRoles\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T18:07:08.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cshtml",
+              "DocumentMoniker": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Views\\Home\\User.cshtml",
+              "RelativeDocumentMoniker": "UserRoles\\Views\\Home\\User.cshtml",
+              "ToolTip": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Views\\Home\\User.cshtml",
+              "RelativeToolTip": "UserRoles\\Views\\Home\\User.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-22T18:06:36.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Views\\Home\\Admin.cshtml",
+              "RelativeDocumentMoniker": "UserRoles\\Views\\Home\\Admin.cshtml",
+              "ToolTip": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Views\\Home\\Admin.cshtml",
+              "RelativeToolTip": "UserRoles\\Views\\Home\\Admin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-22T18:04:37.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Views\\Account\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "UserRoles\\Views\\Account\\ChangePassword.cshtml",
+              "ToolTip": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Views\\Account\\ChangePassword.cshtml",
+              "RelativeToolTip": "UserRoles\\Views\\Account\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwCIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-22T16:01:38.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VerifyEmail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Views\\Account\\VerifyEmail.cshtml",
+              "RelativeDocumentMoniker": "UserRoles\\Views\\Account\\VerifyEmail.cshtml",
+              "ToolTip": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Views\\Account\\VerifyEmail.cshtml",
+              "RelativeToolTip": "UserRoles\\Views\\Account\\VerifyEmail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-22T15:43:30.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "UserRoles\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "UserRoles\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-22T15:32:37.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "UserRoles\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "UserRoles\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAAKcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T12:58:06.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "UserRoles\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Babashov\\source\\repos\\UserRoles\\UserRoles\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "UserRoles\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-22T12:46:47.807Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
