@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ActionConstraints;
 using UserRoles.Models;
 using UserRoles.ViewModels;
 
@@ -27,7 +26,6 @@ namespace UserRoles.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-
         public async Task<IActionResult> Login(LoginViewModel model)
         {
             if (!ModelState.IsValid)
@@ -35,7 +33,8 @@ namespace UserRoles.Controllers
                 return View(model);
             }
 
-            var result = await signInManager.PasswordSignInAsync(model.Email, model.Paassword, model.RememberMe, lockoutOnFailure: false);
+            var result = await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
+
             if (result.Succeeded)
             {
                 return RedirectToAction("Index", "Home");
@@ -59,6 +58,7 @@ namespace UserRoles.Controllers
             {
                 return View(model);
             }
+
             var user = new Users
             {
                 FullName = model.Name,
@@ -84,7 +84,7 @@ namespace UserRoles.Controllers
                 return RedirectToAction("Login", "Account");
             }
 
-            foreach(var error in result.Errors)
+            foreach (var error in result.Errors)
             {
                 ModelState.AddModelError(string.Empty, error.Description);
             }
@@ -130,15 +130,16 @@ namespace UserRoles.Controllers
         }
 
 
+
         [HttpGet]
         public IActionResult ChangePassword(string userName)
         {
-            if(string.IsNullOrEmpty(userName))
+            if (string.IsNullOrEmpty(userName))
             {
                 return RedirectToAction("VerifyEmail", "Account");
             }
 
-            return View(new ChangePasswordViewModel { Email = userName});
+            return View(new ChangePasswordViewModel { Email = userName });
         }
 
         [HttpPost]
@@ -176,7 +177,6 @@ namespace UserRoles.Controllers
                 return View(model);
             }
         }
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -217,6 +217,7 @@ namespace UserRoles.Controllers
 
             if (result.Succeeded)
             {
+                // Successfully reset password, redirect to Login
                 return RedirectToAction("Login", "Account");
             }
 
@@ -224,8 +225,11 @@ namespace UserRoles.Controllers
             {
                 ModelState.AddModelError("", error.Description);
             }
+
             return View(model);
         }
+
+
 
 
     }

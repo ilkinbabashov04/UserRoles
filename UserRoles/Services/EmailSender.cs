@@ -1,50 +1,39 @@
-﻿using System;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Net.Mail;
+using Microsoft.Extensions.Configuration;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using UserRoles.Data;
 
 public class EmailSender
 {
-    private readonly AppDbContext _dbContext;
+    private readonly IConfiguration _configuration;
 
-    public EmailSender(AppDbContext dbContext)
+    public EmailSender(IConfiguration configuration)
     {
-        _dbContext = dbContext;
+        _configuration = configuration;
     }
 
     public async Task SendEmailAsync(string toEmail, string subject, string body)
     {
-        // 🔹 Retrieve user credentials from the database
-        var user = await _dbContext.Users
-            .Where(u => u.Email == toEmail)
-            .Select(u => new { u.Email, u.AppPassword })
-            .FirstOrDefaultAsync();
+        var emailSettings = _configuration.GetSection("EmailSettings");
 
-        if (user == null)
-            throw new Exception("User email not found in the database.");
-
-        if (string.IsNullOrEmpty(user.AppPassword))
-            throw new Exception("No SMTP password found for this user.");
-
-        using (var smtpClient = new SmtpClient("smtp.gmail.com"))
+        var smtpClient = new SmtpClient(emailSettings["SmtpServer"])
         {
-            smtpClient.Port = 587;
-            smtpClient.Credentials = new NetworkCredential(user.Email, user.AppPassword);
-            smtpClient.EnableSsl = true;
+            Port = int.Parse(emailSettings["Port"]),
+            Credentials = new NetworkCredential(emailSettings["Username"], emailSettings["Password"]),
+            EnableSsl = bool.Parse(emailSettings["EnableSSL"]),
+            DeliveryMethod = SmtpDeliveryMethod.Network
+        };
 
-            var mailMessage = new MailMessage
-            {
-                From = new MailAddress(user.Email),
-                Subject = subject,
-                Body = body,
-                IsBodyHtml = true
-            };
-            mailMessage.To.Add(toEmail);
+        var mailMessage = new MailMessage
+        {
+            From = new MailAddress(emailSettings["Username"]),
+            Subject = subject,
+            Body = body,
+            IsBodyHtml = true
+        };
 
-            await smtpClient.SendMailAsync(mailMessage);
-        }
+        mailMessage.To.Add(toEmail);
+
+        await smtpClient.SendMailAsync(mailMessage);
     }
 }

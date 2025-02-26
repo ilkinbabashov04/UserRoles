@@ -25,7 +25,7 @@ namespace UserRoles.Controllers
             return View();
         }
 
-        [Authorize(Roles ="Admin")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Admin()
         {
             return View();
