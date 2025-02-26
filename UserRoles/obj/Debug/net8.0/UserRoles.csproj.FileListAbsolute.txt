@@ -147,3 +147,4 @@ C:\Users\Babashov\source\repos\UserRoles\UserRoles\obj\Debug\net8.0\refint\UserR
 C:\Users\Babashov\source\repos\UserRoles\UserRoles\obj\Debug\net8.0\UserRoles.pdb
 C:\Users\Babashov\source\repos\UserRoles\UserRoles\obj\Debug\net8.0\UserRoles.genruntimeconfig.cache
 C:\Users\Babashov\source\repos\UserRoles\UserRoles\obj\Debug\net8.0\ref\UserRoles.dll
+C:\Users\Babashov\source\repos\UserRoles\UserRoles\obj\Debug\net8.0\UserRoles.sourcelink.json

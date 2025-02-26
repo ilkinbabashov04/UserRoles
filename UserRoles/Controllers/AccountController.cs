@@ -99,7 +99,7 @@ namespace UserRoles.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> VerifyEmail(VerifyEmailViewModel model)
+        public async Task<IActionResult> VerifyEmail(VerifyEmailViewModel model, [FromServices] EmailSender emailSender)
         {
             if (!ModelState.IsValid)
             {
@@ -113,11 +113,22 @@ namespace UserRoles.Controllers
                 ModelState.AddModelError("", "User not found!");
                 return View(model);
             }
-            else
-            {
-                return RedirectToAction("ChangePassword", "Account", new { username = user.UserName });
-            }
+
+            // Generate password reset token
+            var token = await userManager.GeneratePasswordResetTokenAsync(user);
+            var resetLink = Url.Action("ResetPassword", "Account",
+                new { token, email = user.Email }, Request.Scheme);
+
+            // Send email
+            string subject = "Reset Your Password";
+            string body = $"Click <a href='{resetLink}'>here</a> to reset your password.";
+
+            await emailSender.SendEmailAsync(user.Email, subject, body);
+
+            ViewBag.Message = "A password reset link has been sent to your email.";
+            return View();
         }
+
 
         [HttpGet]
         public IActionResult ChangePassword(string userName)
@@ -174,6 +185,48 @@ namespace UserRoles.Controllers
             await signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+
+        [HttpGet]
+        public IActionResult ResetPassword(string token, string email)
+        {
+            if (string.IsNullOrEmpty(token) || string.IsNullOrEmpty(email))
+            {
+                return BadRequest("Invalid password reset link.");
+            }
+
+            var model = new ResetPasswordViewModel { Token = token, Email = email };
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var user = await userManager.FindByEmailAsync(model.Email);
+            if (user == null)
+            {
+                ModelState.AddModelError("", "User not found!");
+                return View(model);
+            }
+
+            var result = await userManager.ResetPasswordAsync(user, model.Token, model.NewPassword);
+
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError("", error.Description);
+            }
+            return View(model);
+        }
+
 
     }
 }
